@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+    Copyright 2017-2019 MuK IT GmbH
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+
+  -->
+<odoo>
+
+    <record id="view_tpe_accueil_tree" model="ir.ui.view">
+        <field name="name">tpe.accueil.tree</field>
+        <field name="model">tpe.accueil</field>
+        <field name="arch" type="xml">
+            <tree string="Accueil" >
+                <field name="nom_tpe" />
+                <field name="taille_tpe" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_tpe_accueil_form" model="ir.ui.view">
+        <field name="name">tpe.accueil.form</field>
+        <field name="model">tpe.accueil</field>
+        <field name="arch" type="xml">
+            <form string="Accueil">
+                <sheet>
+
+                    <group>
+                        <group>
+                            <field name="nom_tpe" />
+                        </group>
+                        <group>
+                            <field name="taille_tpe" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_tpe_accueil" model="ir.actions.act_window">
+        <field name="name">Accueil</field>
+        <field name="res_model">tpe.accueil</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_all': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new tpe.
+            </p>
+            <p>
+                Categories are used to categorize Documents.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        id="menu_tpe_accueil"
+        name="Accueil"
+        parent="tpe_solution.menu_root"
+        action="action_tpe_accueil"
+    />
+</odoo>

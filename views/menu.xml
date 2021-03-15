@@ -1,0 +1,44 @@
+<odoo>
+  <data>
+
+      <!-- Top menu item -->
+      <menuitem name="TPE SOULTION" id="tpe_solution.menu_root" web_icon="tpe_solution,static/description/icon.png"/>
+      <menuitem id="sale.sale_menu_root" parent="tpe_solution.menu_root"/>
+      <menuitem id="project.menu_main_pm" parent="tpe_solution.menu_root" />
+      <menuitem id="purchase.menu_purchase_root" parent="tpe_solution.menu_root" />
+      <menuitem id="stock.menu_stock_root" parent="tpe_solution.menu_root" />
+      <menuitem id="crm.crm_menu_root" parent="tpe_solution.menu_root" />
+      <menuitem id="website.menu_website_configuration" parent="tpe_solution.menu_root" />
+      <menuitem id="hr.menu_hr_root" parent="tpe_solution.menu_root" />
+      <menuitem id="account.menu_finance" parent="tpe_solution.menu_root" />
+      <menuitem name="Marketing" id="marketing_menu" parent="tpe_solution.menu_root" />
+      <menuitem id="mass_mailing.mass_mailing_menu_root" parent="tpe_solution.menu_root" />
+      <menuitem id="mass_mailing_sms.mass_mailing_sms_menu_root" parent="tpe_solution.menu_root" />
+      <!--
+
+            <menuitem name="Comptabilité" id="tpe_solution.comptabilite" parent="tpe_solution.menu_root"/>
+                <menuitem name="List" id="tpe_solution.menu_2" parent="tpe_solution.comptabilite"
+                      action="tpe_solution.action_window"/>
+
+
+            <menuitem name="Achats et Vente" id="tpe_solution.acaht_vente" parent="tpe_solution.menu_root"/>
+                <menuitem name="Vente" id="tpe_solution._vente" parent="tpe_solution.menu_root"/>
+                    <menuitem name="Vente" id="tpe_solution.menu_3" parent="tpe_solution._vente"
+                      action="tpe_solution_action_vente"/>
+
+            <menuitem name="Marketting et finance" id="tpe_solution.marketing_finance" parent="tpe_solution.menu_root"/>
+                <menuitem name="List" id="tpe_solution.menu_4" parent="tpe_solution.marketing_finance"
+                      action="tpe_solution.action_window"/>
+
+            <menuitem name="Paie" id="tpe_solution.paie" parent="tpe_solution.menu_root"/>
+                <menuitem name="List" id="tpe_solution.menu_5" parent="tpe_solution.paie"
+                      action="tpe_solution.action_window"/>
+
+
+            <menuitem name="Configuration" id="tpe_solution.configuration" parent="tpe_solution.menu_root"/>
+                <menuitem name="List" id="tpe_solution.menu_6" parent="tpe_solution.configuration"
+                      action="tpe_solution.action_window"/>-->
+
+  </data>
+
+</odoo>

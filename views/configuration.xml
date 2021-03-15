@@ -1,0 +1,18 @@
+<odoo>
+
+    <record id="website_slides_action_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module': 'website_slides', 'bin_size': False}</field>
+    </record>
+
+    <menuitem name="Settings"
+        id="website_slides_menu_config_settings"
+        parent="tpe_solution.menu_root"
+        sequence="15"
+        action="website_slides_action_settings"
+        groups="base.group_system"/>
+</odoo>
